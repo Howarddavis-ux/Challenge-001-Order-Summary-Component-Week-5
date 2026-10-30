@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+
+body {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    background-image: url('pattern-background-desktop.svg');
+    color: var(--dark-blue);
+}
+
+#container {
+    width: min(100%, 450px);
+    height: 600px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#container img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 36px 20px 24px;
+    text-align: center;
+}
+
+.card-content h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
+p {
+    margin: 0px;
+    padding: 0px 10px;
+    color: var(--desaturated-blue);
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.plan-row {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    gap: 25px;
+    background: var(--very-pale-blue);
+    border-radius: 12px;
+    padding: 18px 16px;
+}
+
+.icon {
+    width: 10px;
+}
+
+.plan-details {
+    flex: 1;
+    text-align: left;
+}
+
+.plan-name {
+    display: block;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+.plan-price {
+    display: block;
+    color: var(--desaturated-blue);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.plan-change {
+    color: var(--bright-blue);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.proceed,
+.cancel {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+}
+
+.proceed {
+    margin-top: 28px;
+    background: var(--bright-blue);
+    color: #ffffff;
+    padding: 16px 20px;
+    box-shadow: 0 15px 20px rgba(56, 41, 224, 0.2);
+}
+
+.cancel {
+    margin-top: 18px;
+    background: transparent;
+    color: var(--desaturated-blue);
+    padding: 8px 16px;
+}
+
